@@ -1,0 +1,182 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="jlplayer.css">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site da apresentação de notebooks</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .video-container {
+            width: 500px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navegacao">
+            <ul>
+                <li>
+                    <a href="#inicio"> Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre"> Sobre</a>
+                </li>
+                <li>
+                    <a href="#modelo"> Modelos</a>
+                </li>
+                <li>
+                    <a href="#contato"> Contato</a>
+                </li>
+
+
+            </ul>
+        </nav>
+
+        <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+            poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+            <source src="file.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+
+        <form class="video-container" action="" method="GET">
+
+            <!-- Chamar elemento vídeo com class jlplayer-video -->
+            <video preload="none" class="jlplayer-video">
+                <source src="file.mp4" type="video/mp4">
+                <!-- <track kind="captions" src="legenda.vtt" default> -->
+            </video>
+
+        </form>
+
+        <div class="yt">
+            <iframe width="980" src="https://www.youtube.com/embed/IU_gsbLqLpA" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <section class="apresentacao">
+            <p><br><i>Olá</i></p>
+            <p></p>
+            <h1> sou seu facilitador de produtos tecnológicos. <spam class="destaque">Sou Dr. Notebook</spam>
+            </h1>
+            <h2>Notebooks de procedência e de vários modelos para todos os grupos.</h2>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="left">
+                <br>
+                <br>
+                <h2>Sobre a empresa</h2>
+                <p>Nossa empresa tem um modelo de vendas diferenciado, você pode adquirir
+                    sua maquina comprando normalmente, à dinheiro, cartão ou dando de entrada
+                    sua maquina antiga. </p>
+            </div>
+            <div class="right">
+                <img src="IMG/imagem1.jpeg">
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <section class="modelo" id="modelo">
+            <div class="left">
+                <h1>MODELOS DAS MAQUINAS</h1>
+                <br>
+                <h2>Netbooks</h2>
+                <p>Laptop, no Brasil, também denominado de notebook ou a expressão pouco usada computador compacto e em
+                    Portugal
+                    chamado de computador portátil é um computador portátil, leve, projetado para ser transportado e
+                    utilizado em
+                    diferentes lugares com facilidade.. </p>
+            </div>
+            <div class="right">
+                <img src="IMG/img1.jpeg">
+            </div>
+
+            <div class="left">
+                <br>
+                <h2>Netbooks</h2>
+                <p>Laptop, no Brasil, também denominado de notebook ou a expressão pouco usada computador compacto e em
+                    Portugal
+                    chamado de computador portátil é um computador portátil, leve, projetado para ser transportado e
+                    utilizado em
+                    diferentes lugares com facilidade.. </p>
+            </div>
+            <div class="right">
+                <img src="IMG/img2.jpeg">
+            </div>
+
+            <div class="left">
+                <br>
+                <h2>Netbooks</h2>
+                <p>Netbooks são uma categoria menor, mais leve e mais barata de laptops. Quando surgiram, ao final de
+                    2007,[1] os
+                    netbooks se apresentavam como versões menores, mais leves, baratas e otimizadas de notebooks.[2] Os
+                    netbooks
+                    possuem telas e teclados menores, além de poder computacional reduzido quando comparado a um laptop.
+                    Ao longo de sua
+                    evolução, apresentaram variação de tamanho (diagonal de tela) entre 5 e 12 polegadas. </p>
+            </div>
+            <div class="right">
+                <img src="IMG/img3.jpeg">
+            </div>
+
+            <div class="left">
+                <br>
+                <h2>PC GAMER</h2>
+                <p>Laptop, no Brasil, também denominado de notebook ou a expressão pouco usada computador compacto e em
+                    Portugal
+                    chamado de computador portátil é um computador portátil, leve, projetado para ser transportado e
+                    utilizado em
+                    diferentes lugares com facilidade.. </p>
+            </div>
+            <div class="right">
+                <img src="IMG/img4.jpeg">
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <h2><br> Entre em contato</h2>
+            <form>
+                Nome
+                <input type="text" placeholder="Informe seu nome" name="txtnome" required>
+                E-mail
+                <input type="email" placeholder="Informe seu e-mail" name="txtemail" required>
+                Observação
+                <textarea></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+
+        </section>
+    </div>
+    <!--fim da div-->
+
+    <script src="jlplayer.js" async></script>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+
+</body>
+
+</html>
